@@ -1,8 +1,8 @@
 $j(document).ready(AddLPSVaultResources);
 
 function AddLPSVaultResources() {
-  $j("#LPS-Vault-header").insertBefore("#content-main > div.box-round");
-  $j("#LPS-Vault-resources").insertBefore("#content-main > div.box-round");
+  //$j("#LPS-Vault-header").insertBefore("#content-main > div.box-round");
+  //$j("#LPS-Vault-resources").insertBefore("#content-main > div.box-round");
   $j('#content-main > h2:first').each(function () {
     hideCollapseClasses($j(this));
     hideCollapseText($j(this));
