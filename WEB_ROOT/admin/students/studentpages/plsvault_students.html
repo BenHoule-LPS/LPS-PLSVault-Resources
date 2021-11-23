@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <title>PLS Vault Access Log</title>
 ~[wc:commonscripts]
 <script src="/scripts/tlistCustomization.js"></script>
 <link href="/images/css/screen.css" rel="stylesheet" media="screen">
 <link href="/images/css/print.css" rel="stylesheet" media="print">
-<style>
-  #demoComments > div > table > tbody > tr > td > input.deleteCB { display:none }
-  #demoComments > div > table > tbody > tr > td > button.undoDelRow { display:none }
-  #demoComments > div > table > tbody > tr > td > button.deleteRow { display:none }
-
-  #exampleLog {
-    display: block;
-    max-width: 75%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-</style>
+<link href="/images/css/customization.css" rel="stylesheet" media="print">
+</head>
+<body>
 <form action="/admin/changesrecorded.white.html" method="POST">
+<div id="LPS-Vault-resourceinsert">~[cust.insertion_point:content.customlps]</div>
 <div class="box-round" id="demoComments" style="min-width: 600px; min-height: 100px;">
   <div class="row">
     <div class="col">
       <h3>Access Log</h3>
-      <img id="exampleLog" src="/admin/images/ExampleLog.jpg" alt="error loading image">
-      ~[tlist_child:STUDENTS.U_PLSVAULT_COMMENTS.U_PLSVAULT_ACCESSLOG;displaycols:ACCESSDATE,ACCESSRECORD,PURPOSE,USERSTRING,RELEASESTRING;fieldNames:Date,Records Accessed,Purpose of Access,Name and Position of Person Accessing,Name and Position of Person Receiving Record;type:html]
+      <img id="LPS-Vault-examplelog" src="/images/psvault/ExampleLog.jpg" alt="error loading image">
+      ~[tlist_child:STUDENTS.U_PLSVAULT_COMMENTS.U_PLSVAULT_ACCESSLOG;
+      displaycols:ACCESSDATE,ACCESSRECORD,PURPOSE,USERSTRING,RELEASESTRING;
+      fieldNames:Date,Records Accessed,Purpose of Access,Name and Position of Person Accessing,Name and Position of Person Receiving Record;
+      type:html]
     </div>
   </div>
 </div>
@@ -42,7 +37,8 @@
   tlistText2StaticTextAllowNew("USERSTRING");
   tlistText2StaticTextAllowNew("RELEASESTRING");
 </script>
-
 <div class="button-row"><input type="hidden" name="ac" value="prim">~[submitbutton]</div>
+
 </form>
+</body>
 </html>

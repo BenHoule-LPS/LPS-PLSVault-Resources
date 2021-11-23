@@ -1,0 +1,53 @@
+/* Vault Resources */
+#LPS-Vault-header.expanded {
+  background-color: rgb(163, 191, 204);
+}
+#LPS-Vault-header.collapsed {
+  background-color: rgb(237, 237, 237);
+}
+#LPS-Vault-resources {
+  display: flex;
+  flex-direction: row;
+}
+#LPS-Vault-links {
+  flex: 0 0 auto; 
+}
+
+/* Vault Access Table (VAT) */
+#LPS-VATContainer {
+  flex: 0 5 auto;
+  max-width: 1600px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#LPS-VAT {
+  display: none;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Vault Access Log */
+#LPS-Vault-target {
+  width: 1200px;
+  height: 300px;
+  overflow-y: visible;
+  overflow-x: visible;
+  resize: no;
+  position: relative;
+  z-index: 2;
+}
+#LPS-Vault-log {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+#LPS-Vault-examplelog {
+  display: block;
+  max-width: 75%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+#demoComments > div > table > tbody > tr > td > input.deleteCB { display:none }
+#demoComments > div > table > tbody > tr > td > button.undoDelRow { display:none }
+#demoComments > div > table > tbody > tr > td > button.deleteRow { display:none }

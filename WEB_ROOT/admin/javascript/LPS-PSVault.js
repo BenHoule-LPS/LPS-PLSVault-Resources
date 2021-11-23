@@ -1,24 +1,19 @@
-if ($testURL.indexOf("admin/students/studentpages/plsvault_students.html") !== -1) {
-  $j(document).ready(AddLPSPSVaultResources);
-} else {
-  $j(document).ready(RemoveLPSPSVaultResources);
-}
+$j(document).ready(AddLPSVaultResources);
 
-function AddLPSPSVaultResources() {
-   $j("#LPS-PSVaultCustomhiddentable h2").insertBefore("#content-main > div.box-round")
-   $j("#LPSPSVaultResources").insertBefore("#content-main > div.box-round")
-   $j('#content-main > h2:first').each(function(){
-       hideCollapseClasses($j(this));
-       hideCollapseText($j(this));
-       hideCollapseTarget($j(this));
-   });
-   $j("#content-main > div.box-round").insertBefore("#LPS-plsvault_students")
-   $j("#LPS-PSVaultCustomhiddentable").remove();
-   $Vframe = '<div id="LPSPSVaulttarget"><iframe id="LPSPSVaultlog" src="/admin/students/studentpages/LPS-plsvault_students.html?frn='+$LPSPSVault+'" frameborder="0"></iframe></div>'
-   $j("#LPSPSVaultResources").after($Vframe);
-}
-function RemoveLPSPSVaultResources() {
-   $j("#LPS-PSVaultCustomhiddentable").remove();
+function AddLPSVaultResources() {
+  $j("#LPS-Vault-header").insertBefore("#content-main > div.box-round");
+  $j("#LPS-Vault-resources").insertBefore("#content-main > div.box-round");
+  $j('#content-main > h2:first').each(function () {
+    hideCollapseClasses($j(this));
+    hideCollapseText($j(this));
+    hideCollapseTarget($j(this));
+  });
+  //Note to self: Figure out what's going on here
+  //$j("#content-main > div.box-round").insertBefore("#LPS-plsvault_students");
+  $Vframe = "<div id='LPS-Vault-target'>" +
+              "<iframe id='LPS-Vault-log' src='/admin/students/studentpages/LPS-plsvault_students.html?frn=" +
+              $LPS_studentfrn + "' frameborder='0'></iframe></div>";
+  $j("#LPS-Vault-resources").after($Vframe);
 }
 
 function toggleVAT() {
