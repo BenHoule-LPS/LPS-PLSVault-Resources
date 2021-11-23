@@ -2,7 +2,7 @@
 <script type="text/javascript">
   var $LPS_studentfrn = ~(studentfrn);
 </script>
-<script src="/admin/javascript/LPS-PSVault.js"></script>
+<script src="/admin/javascript/LPS-vault.js"></script>
 
 <h2 id="LPS-Vault-header" class="toggle expanded" title="Click to expand or collapse">LPS PSVault Resources <small>(Click to Expand/Collapse)</small></h2>
 <div id="LPS-Vault-resources">
@@ -19,6 +19,6 @@
     -->
   </div>
   <div id="LPS-VATContainer">
-    <img id="LPS-VAT" src="/images/lps-psvault/VaultAccess.png" alt="error loading image">
+    <img id="LPS-VAT" src="/images/LPS-vault/VaultAccess.png" alt="error loading image">
   </div>
 </div>
