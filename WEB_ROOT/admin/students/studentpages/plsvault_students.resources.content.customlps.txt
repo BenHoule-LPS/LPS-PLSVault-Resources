@@ -19,6 +19,6 @@
     -->
   </div>
   <div id="LPS-VATContainer">
-    <img id="LPS-VAT" src="/images/psvault/VaultAccess.png" alt="error loading image">
+    <img id="LPS-VAT" src="/images/lps-psvault/VaultAccess.png" alt="error loading image">
   </div>
 </div>
