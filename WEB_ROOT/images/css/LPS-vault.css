@@ -48,6 +48,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-#demoComments > div > table > tbody > tr > td > input.deleteCB { display:none }
-#demoComments > div > table > tbody > tr > td > button.undoDelRow { display:none }
-#demoComments > div > table > tbody > tr > td > button.deleteRow { display:none }
+#demoComments > div > table > tbody > tr > td > .deleteCB { display:none }
+#demoComments > div > table > tbody > tr > td > .undoDelRow { display:none }
+#demoComments > div > table > tbody > tr > td > .deleteRow { display:none }
