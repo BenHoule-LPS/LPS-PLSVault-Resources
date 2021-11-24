@@ -1,0 +1,18 @@
+<style>
+  a.LPSVault:link {
+    color: red;
+  }
+  a.LPSVault:visited {
+    color: red;
+  }
+  a.LPSVault:hover {
+    color: red;
+  }
+</style>
+<script type="text/javascript">
+$j(document).ready(function() {
+    var $customScreensLink = $j( "ul#std_information > li > a[href^='morecustom.html?frn=']" );
+    $customScreensLink.after( $j('<a class="LPSVault" href="/admin/students/studentpages/plsvault_students.html?frn=~(studentfrn)">PLS Vault Documents &tilde;</a>') );
+    $customScreensLink.replaceWith( $j('<a class="LPSVault" href="/admin/students/studentpages/LPS-plsvault_students.html?frn=~(studentfrn)">PLS Vault Access Log &tilde;</a>') );
+});
+</script>
